@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Can Ayçiçek | Dijital Stratejist & Teknoloji Lideri</title>
+    <meta name="description" content="Can Ayçiçek'in kişisel portföyü. Dijital dönüşüm, stratejik yönetim ve teknoloji liderliği alanlarında premium çözümler ve kurumsal deneyimler.">
+    <meta name="keywords" content="Can Ayçiçek, Dijital Stratejist, Teknoloji Lideri, Yazılım Geliştirici, Kişisel Portföy, Kurumsal Tasarım">
+    <meta name="author" content="Can Ayçiçek">
+    <link rel="canonical" href="https://canaycicek.com.tr">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://canaycicek.com.tr">
+    <meta property="og:title" content="Can Ayçiçek | Dijital Stratejist & Teknoloji Lideri">
+    <meta property="og:description" content="Kurumsal, şık ve modern çözümlerle dijital dünyada fark yaratan projeler ve stratejik yönetim deneyimleri.">
+    <meta property="og:image" content="https://canaycicek.com.tr/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://canaycicek.com.tr">
+    <meta property="twitter:title" content="Can Ayçiçek | Dijital Stratejist & Teknoloji Lideri">
+    <meta property="twitter:description" content="Kurumsal, şık ve modern çözümlerle dijital dünyada fark yaratan projeler ve stratejik yönetim deneyimleri.">
+    <meta property="twitter:image" content="https://canaycicek.com.tr/assets/og-image.jpg">
+
+    <!-- Favicon Placeholders -->
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    
+    <!-- Google Fonts: Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- İnteraktif Hareketli Arka Plan Canvas -->
+    <canvas id="bg-particles-canvas" aria-hidden="true"></canvas>
+
+    <!-- Header / Translucent Glassmorphism Navbar -->
+    <header class="navbar" id="home-nav">
+        <div class="nav-container">
+            
+            <a href="#home" class="logo" aria-label="Can Ayçiçek Anasayfa">
+                <!-- <img src="can logo.png" alt="Can Ayçiçek Logo" class="logo-img"> -->
+                Can <span class="accent-dot">Ayçiçek</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-menu" aria-label="Ana Menü">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Anasayfa</a></li>
+                    <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                    <li><a href="#projects" class="nav-link">Projeler</a></li>
+                    <li><a href="#contact" class="nav-link">İletişim</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#contact" class="btn btn-nav" aria-label="İletişime Geçin">Teklif Al</a>
+                </div>
+            </nav>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="mobile-menu-drawer">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-menu-drawer" aria-hidden="true">
+        <nav class="mobile-menu" aria-label="Mobil Menü">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-link">Anasayfa</a></li>
+                <li><a href="#about" class="mobile-link">Hakkımda</a></li>
+                <li><a href="#projects" class="mobile-link">Projeler</a></li>
+                <li><a href="#contact" class="mobile-link">İletişim</a></li>
+            </ul>
+            <div class="mobile-nav-cta">
+                <a href="#contact" class="btn btn-primary" aria-label="İletişime Geçin">Teklif Al</a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section scroll-spy-section">
+            <div class="bg-blur-orb orb-1"></div>
+            <div class="bg-blur-orb orb-2"></div>
+            
+            <div class="container hero-grid">
+                <div class="hero-content reveal-on-scroll">
+                    <div class="badge-accent">
+                        <i data-lucide="shield-check" class="badge-icon"></i>
+                        <span>C Sınıfı İş Güvenliği Uzmanı</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Geleceğin Teknolojilerini <br>
+                        <span class="text-gradient">Bugünden Yönetin</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Ben <strong>C Sınıfı İş Güvenliği Uzmanı Can Ayçiçek</strong>. Kurumsal yapıların İş Sağlığı ve Güvenliği alanında dijital dönüşüm süreçleri ile ilgili çalışmalar yapıyor, veriye dayalı stratejilerle sürdürülebilir büyüme altyapıları inşa ediyorum.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary" aria-label="Projelerimi İnceleyin">
+                            <span>Projelerimi İnceleyin</span>
+                            <i data-lucide="arrow-up-right" class="btn-icon"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" aria-label="Benimle İletişime Geçin">
+                            <span>İletişime Geç</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal-on-scroll delay-200">
+                    <div class="portrait-container">
+                        <div class="portrait-glow-ring"></div>
+                        <div class="portrait-image-wrapper">
+                            <!-- Profesyonel Portre Fotoğrafı -->
+                            <img src="can_portrait.png" alt="Can Ayçiçek - C Sınıfı İş Güvenliği Uzmanı" class="portrait-img-main">
+                            <!-- Premium Gölgelendirme ve Vignette Efekti -->
+                            <div class="portrait-vignette" aria-hidden="true"></div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="stats-icon-wrapper">
+                                <i data-lucide="award" class="stats-icon"></i>
+                            </div>
+                            <div class="stats-text">
+                                <span class="stats-number">2+ Yıl</span>
+                                <span class="stats-label">Sektörel Deneyim</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" aria-hidden="true">
+                <span class="scroll-dot"></span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tagline">HAKKIMDA</span>
+                    <h2 class="section-title">HSE Süreç Geliştirme & Dijital Dönüşüm & Yazılım ve Otomasyon Çözümleri</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text-column reveal-on-scroll">
+                        <h3 class="about-lead">
+                           <div class="about-signatures">
+                                <div class="sig-title">
+                                    <strong>Can Ayçiçek</strong>
+                                    <span>C Sınıfı İş Güvenliği Uzmanı</span>
+                                </div>
+                            </div>
+                        </h3>
+                        <p class="about-paragraph">
+                             Karmaşık iş sağlığı ve güvenliği sistemlerini sadeleştiriyor, şirketleri dijital geleceğe güvenle taşıyor, İş Sağlığı ve Güvenliği alanında saha deneyimini teknolojiyle birleştirerek süreçlerin daha verimli, sürdürülebilir ve kullanıcı odaklı hale gelmesine katkı sağlıyorum.
+                        </p>
+                        <p class="about-paragraph">
+                            Kariyerim boyunca risk değerlendirmeleri, saha denetimleri, İSG eğitimleri, iş izin sistemleri ve yasal süreçlerin yönetiminde aktif görev aldım. Bunun yanında HSE süreçlerinin dijitalleştirilmesine yönelik yazılım projeleri, otomasyon çözümleri, veri analizleri ve eğitim materyalleri geliştirerek operasyonel verimliliğin artırılmasına odaklandım.
+ 
+İş güvenliğinin yalnızca sahada değil, doğru tasarlanmış dijital sistemler ve çalışan katılımını artıran çözümlerle de güçleneceğine inanıyorum. Bu doğrultuda HSE yazılımları, süreç geliştirme, otomasyon ve dijital dönüşüm alanlarında kendimi sürekli geliştirmeye devam ediyorum.
+                        </p>
+
+                        <div class="skills-decor-grid">
+                            <!-- Highlight 1 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-teal">
+                                    <i data-lucide="cpu" class="decor-icon"></i>
+                                </div>
+                                <span>Otomasyon Odaklı</span>
+                            </div>
+                            <!-- Highlight 2 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-blue">
+                                    <i data-lucide="lightbulb" class="decor-icon"></i>
+                                </div>
+                                <span>Yenilikçi</span>
+                            </div>
+                            <!-- Highlight 3 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-green">
+                                    <i data-lucide="search" class="decor-icon"></i>
+                                </div>
+                                <span>Araştırmacı</span>
+                            </div>
+                            <!-- Highlight 4 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-blue">
+                                    <i data-lucide="bar-chart-3" class="decor-icon"></i>
+                                </div>
+                                <span>Veri Odaklı</span>
+                            </div>
+                            <!-- Highlight 5 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-green">
+                                    <i data-lucide="shield-check" class="decor-icon"></i>
+                                </div>
+                                <span>Proaktif</span>
+                            </div>
+                            <!-- Highlight 6 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-teal">
+                                    <i data-lucide="leaf" class="decor-icon"></i>
+                                </div>
+                                <span>Sürdürülebilir</span>
+                            </div>
+                            <!-- Highlight 7 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-blue">
+                                    <i data-lucide="target" class="decor-icon"></i>
+                                </div>
+                                <span>Çözüm Odaklı</span>
+                            </div>
+                            <!-- Highlight 8 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-green">
+                                    <i data-lucide="user-check" class="decor-icon"></i>
+                                </div>
+                                <span>Kullanıcı Odaklı</span>
+                            </div>
+                            <!-- Highlight 9 -->
+                            <div class="decor-card">
+                                <div class="decor-icon-wrapper icon-teal">
+                                    <i data-lucide="line-chart" class="decor-icon"></i>
+                                </div>
+                                <span>Analitik</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="about-skills-column reveal-on-scroll delay-200">
+                        <h3 class="skills-title">Temel Uzmanlık Alanları</h3>
+                        <p class="skills-subtitle">Teoriyi pratiğe dökerek sürdürülebilir başarı elde ettiğim ana yetkinlikler:</p>
+                        
+                        <div class="skills-grid-new">
+                            <!-- Skill Card 1 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-teal">
+                                    <i data-lucide="clipboard-check"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">Saha Gözlem & Denetim</h4>
+                                    <p class="skill-card-desc">Proaktif saha gözlemleri, risklerin yerinde tespiti ve raporlama.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 2 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-blue">
+                                    <i data-lucide="shield-alert"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">Risk Değerlendirmesi</h4>
+                                    <p class="skill-card-desc">Tehlikelerin sistematik analizi, risk puanlaması ve önleyici tedbirler.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 3 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-green">
+                                    <i data-lucide="file-signature"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">İş İzin Sistemleri</h4>
+                                    <p class="skill-card-desc">Yüksek riskli operasyonların izin takibi ve güvenli koordinasyonu.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 4 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-teal">
+                                    <i data-lucide="siren"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">Tatbikat Yönetimi</h4>
+                                    <p class="skill-card-desc">Acil durum, arama kurtarma tatbikatı planlaması ve aktif rol alma.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 5 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-teal">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">ISO 14001 & 45001</h4>
+                                    <p class="skill-card-desc">Entegre çevre ve İSG yönetim sistemleri denetimi ve uyumluluk.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 6 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-blue">
+                                    <i data-lucide="calendar-clock"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">Periyodik Kontroller</h4>
+                                    <p class="skill-card-desc">İş ekipmanlarının yasal periyodik kontrol süreçlerinin planlanması ve takibi.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 7 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-green">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">İSG & Çevre Eğitimleri</h4>
+                                    <p class="skill-card-desc">İş güvenliği ve çevre bilincini artırmaya yönelik modern eğitim organizasyonları.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 8 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-teal">
+                                    <i data-lucide="presentation"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">Kurul Organizasyonu</h4>
+                                    <p class="skill-card-desc">Yasal İSG kurulu toplantılarının koordinasyonu, kararların yasal takibi.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 9 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-blue">
+                                    <i data-lucide="workflow"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">Rutin İş Otomasyonları</h4>
+                                    <p class="skill-card-desc">Tekrarlayan İSG operasyonlarının dijital akışlar ve otomasyon ile hızlandırılması.</p>
+                                </div>
+                            </div>
+                            <!-- Skill Card 10 -->
+                            <div class="skill-card-new">
+                                <div class="skill-card-icon-wrapper icon-green">
+                                    <i data-lucide="palette"></i>
+                                </div>
+                                <div class="skill-card-content">
+                                    <h4 class="skill-card-title">İSG Görsel Tasarım</h4>
+                                    <p class="skill-card-desc">Saha içi farkındalığı artırıcı, profesyonel afiş, bülten ve grafik çalışmaları.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Projects Section -->
+        <section id="projects" class="projects-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tagline">PORTFÖY</span>
+                    <h2 class="section-title">Projeler & Çözümler</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <!-- Category Filter Tabs
+                <div class="portfolio-filters reveal-on-scroll" role="tablist" aria-label="Proje Kategorileri">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="project-grid">Hepsi</button>
+                    <button class="filter-btn" data-filter="tech" role="tab" aria-selected="false" aria-controls="project-grid">Teknoloji</button>
+                    <button class="filter-btn" data-filter="strategy" role="tab" aria-selected="false" aria-controls="project-grid">Strateji</button>
+                    <button class="filter-btn" data-filter="mgmt" role="tab" aria-selected="false" aria-controls="project-grid">Yönetim</button>
+                </div> -->
+                
+                <!-- Project Grid -->
+                <div class="project-grid" id="project-grid">
+                    <!-- Project Card 1 (Tech) -->
+                    <article class="project-card reveal-on-scroll" data-category="tech">
+                        <div class="project-image-container">
+                            <div class="project-gradient-overlay"></div>
+                            <img class="project-image" src="isg_mevzuat.jpg" alt="İSG Mevzuat Takip Sistemi Mobil Uygulama Ekran Görüntüsü" width="400" height="220">
+                            <span class="project-badge">İSG Mevzuat & Yönetmelik Takip Sistemi</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">İSG Mevzuat Takip Sistemi</h3>
+                            <p class="project-desc">
+                                İş Sağlığı ve Güvenliği profesyonelleri için geliştirilen kapsamlı bir mobil uygulamadır. Uygulama sayesinde Resmî Gazete'de yayımlanan İş Sağlığı ve Güvenliği ile ilgili kanunlar, yönetmelikler, tebliğler ve idari para cezaları tek bir platform üzerinden takip edilebilir.
+                            </p>
+                            <p class="project-desc">
+                                Sistem, mevzuat değişikliklerini otomatik olarak tespit ederek kullanıcıları anlık bildirimlerle bilgilendirir. Değişen maddeler karşılaştırmalı olarak görüntülenebilir; önceki ve güncel metinler yan yana incelenebilir ve değişikliklerin İSG uygulamalarına etkisi yapay zekâ destekli özetlerle kullanıcıya sunulur. Böylece İSG uzmanları, işverenler ve sektör profesyonelleri güncel mevzuatı hızlı, kolay ve güvenilir bir şekilde takip edebilir.
+                            </p>
+                            <a href="#" class="project-link" aria-label="Kurumsal Bulut Altyapı Dönüşümü Projesini İnceleyin">
+                                <span>Detayları Gör</span>
+                                <i data-lucide="arrow-right" class="link-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 (Strategy) -->
+                    <article class="project-card reveal-on-scroll" data-category="strategy">
+                        <div class="project-image-container">
+                            <div class="project-gradient-overlay"></div>
+                            <svg class="project-svg-placeholder" width="100%" height="220" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="E-Ticaret Dijital Stratejisi Projesi Görseli">
+                                <rect width="400" height="220" fill="#0F2027"/>
+                                <path d="M50 170L120 120L200 150L280 80L350 130" stroke="#00E676" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="280" cy="80" r="8" fill="#4B9CD3"/>
+                                <circle cx="120" cy="120" r="5" fill="#00E676"/>
+                            </svg>
+                            <span class="project-badge">Proje 2</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Proje 2</h3>
+                            <p class="project-desc">
+                                Proje 2
+                            </p>
+                            <a href="#" class="project-link" aria-label="E-Ticaret Genişleme Stratejisi Projesini İnceleyin">
+                                <span>Detayları Gör</span>
+                                <i data-lucide="arrow-right" class="link-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 (Management) -->
+                    <article class="project-card reveal-on-scroll" data-category="mgmt">
+                        <div class="project-image-container">
+                            <div class="project-gradient-overlay"></div>
+                            <svg class="project-svg-placeholder" width="100%" height="220" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Agile Yönetim Eğitimi Projesi Görseli">
+                                <rect width="400" height="220" fill="#1C1C24"/>
+                                <rect x="80" y="50" width="70" height="120" rx="8" fill="#252532" stroke="#05A081" stroke-width="2"/>
+                                <rect x="165" y="50" width="70" height="120" rx="8" fill="#252532" stroke="#4B9CD3" stroke-width="2"/>
+                                <rect x="250" y="50" width="70" height="120" rx="8" fill="#252532" stroke="#00E676" stroke-width="2"/>
+                                <line x1="100" y1="90" x2="130" y2="90" stroke="#A5A5A5" stroke-width="2"/>
+                                <line x1="185" y1="110" x2="215" y2="110" stroke="#A5A5A5" stroke-width="2"/>
+                                <circle cx="285" cy="80" r="6" fill="#00E676"/>
+                            </svg>
+                            <span class="project-badge">Proje 3</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Proje 3</h3>
+                            <p class="project-desc">
+                                Proje 3
+                            </p>
+                            <a href="#" class="project-link" aria-label="Çevik Dönüşüm Danışmanlığı Projesini İnceleyin">
+                                <span>Detayları Gör</span>
+                                <i data-lucide="arrow-right" class="link-icon"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-spy-section">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tagline">İLETİŞİM</span>
+                    <h2 class="section-title">Geleceği Birlikte İnşa Edelim</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information Column -->
+                    <div class="contact-info-column reveal-on-scroll">
+                        <h3 class="contact-lead-text">Bir projeniz mi var? Yoksa sadece tanışmak mı istiyorsunuz?</h3>
+                        <p class="contact-paragraph">
+                            Kurumsal hedeflerinize giden yolda dijital çözümlerimizi konuşmak, teknolojik yol haritanızı tasarlamak veya fikir alışverişinde bulunmak için benimle iletişime geçebilirsiniz.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <div class="contact-icon-box" aria-hidden="true">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-label">E-Posta Adresi</span>
+                                    <a href="mailto:can.m.aycicek@gmail.com" class="contact-value" aria-label="E-posta gönder: can.m.aycicek@gmail.com">can.m.aycicek@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="contact-item">
+                                <div class="contact-icon-box" aria-hidden="true">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-label">Lokasyon</span>
+                                    <span class="contact-value">İstanbul, Türkiye</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Consultation Availability -->
+                            <div class="contact-item">
+                                <div class="contact-icon-box" aria-hidden="true">
+                                    <i data-lucide="calendar"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-label">Çalışma Saatleri</span>
+                                    <span class="contact-value">Hafta içi: 09:00 - 18:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Profiles -->
+                        <div class="social-profiles">
+                            <span class="social-title">Sosyal Ağlar</span>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/v-can-ay%C3%A7i%C3%A7ek-70078b277/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Can Ayçiçek LinkedIn Profilini Ziyaret Et">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                </a>
+                                <a href="https://github.com/canaycicek" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Can Ayçiçek GitHub Profilini Ziyaret Et">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Can Ayçiçek Twitter Profilini Ziyaret Et">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-column reveal-on-scroll delay-200">
+                        <div class="contact-form-wrapper">
+                            <form id="portfolio-contact-form" class="contact-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="form-name" class="form-input" required placeholder=" " aria-required="true" aria-label="Adınız Soyadınız">
+                                        <label for="form-name" class="form-label">Adınız Soyadınız</label>
+                                        <span class="form-error" aria-live="polite">Lütfen adınızı ve soyadınızı giriniz.</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="form-email" class="form-input" required placeholder=" " aria-required="true" aria-label="E-posta Adresiniz">
+                                        <label for="form-email" class="form-label">E-posta Adresiniz</label>
+                                        <span class="form-error" aria-live="polite">Lütfen geçerli bir e-posta adresi giriniz.</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" id="form-subject" class="form-input" required placeholder=" " aria-required="true" aria-label="Konu">
+                                    <label for="form-subject" class="form-label">Konu</label>
+                                    <span class="form-error" aria-live="polite">Lütfen bir konu başlığı belirtiniz.</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <textarea id="form-message" class="form-input form-textarea" required placeholder=" " rows="5" aria-required="true" aria-label="Mesajınız"></textarea>
+                                    <label for="form-message" class="form-label">Mesajınız</label>
+                                    <span class="form-error" aria-live="polite">Lütfen mesajınızı buraya yazınız.</span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-submit" aria-label="Mesajı Gönder">
+                                    <span class="btn-text">Mesaj Gönder</span>
+                                    <i data-lucide="send" class="btn-icon"></i>
+                                    <div class="spinner-loader" aria-hidden="true"></div>
+                                </button>
+                            </form>
+                            
+                            <!-- Success State Overlay -->
+                            <div class="form-success-overlay" id="form-success" aria-hidden="true">
+                                <div class="success-content">
+                                    <div class="success-icon-wrapper">
+                                        <i data-lucide="check" class="success-check-icon"></i>
+                                    </div>
+                                    <h3 class="success-title">Mesajınız Alındı</h3>
+                                    <p class="success-desc">Mesajınız bana başarıyla ulaştı. En kısa sürede tarafınıza dönüş sağlayacağım. İlginiz için teşekkürler.</p>
+                                    <button class="btn btn-secondary btn-reset" id="btn-reset-form" aria-label="Yeni mesaj formu aç">Yeni Mesaj Gönder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-glow-orb" aria-hidden="true"></div>
+        <div class="container footer-minimal-container">
+            <!-- Logo -->
+            <a href="#home" class="logo footer-logo" aria-label="Can Ayçiçek Anasayfa">
+                Can <span class="accent-dot">Ayçiçek</span>
+            </a>
+            
+            <!-- Profesyonel Motto -->
+            <p class="footer-motto">
+                "Güvenli yarınlar, bugünün dijital adımlarıyla inşa edilir."
+            </p>
+            
+            <!-- Telif Hakkı ve Slogan -->
+            <div class="footer-bottom-line">
+                <p class="footer-copyright">&copy; 2026 canaycicek.com.tr. Tüm Hakları Saklıdır.</p>
+                <div class="footer-meta-info">
+                    <span>Geleceği Tasarla & Güvende Kal ⚡</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Yukarı Git Butonu -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Yukarı Git" title="Yukarı Git">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
